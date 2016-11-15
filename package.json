@@ -4,7 +4,7 @@
   "description": "NodeJS Module for working with PHP serialized data",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "testrun": "jest"
   },
   "repository": {
