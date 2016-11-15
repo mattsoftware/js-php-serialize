@@ -1,0 +1,26 @@
+{
+  "name": "js-php-serialize",
+  "version": "0.0.1",
+  "description": "NodeJS Module for working with PHP serialized data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattsoftware/js-php-serialize.git"
+  },
+  "keywords": [
+    "php",
+    "serialize"
+  ],
+  "author": "Matt Paine <matt@mattsoftware.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattsoftware/js-php-serialize/issues"
+  },
+  "homepage": "https://github.com/mattsoftware/js-php-serialize#readme",
+  "devDependencies": {
+    "jest": "^17.0.2"
+  }
+}
