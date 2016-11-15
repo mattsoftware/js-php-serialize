@@ -12,7 +12,7 @@ console.log(php.serialize({one:"two", 3:"four"}));
 // => a:2:{i:3;s:4:"four";s:3:"one";s:3:"two";}
 ```
 
-For more complex objects, an optional metadata value can be passed through to provide hints on how to serialize the object. By default this is the `__phpSerializedObject__` property, but can be customised by passing through an optiions object through to the serialize method. (See the `__tests__` folder for more examples.)
+For more complex objects, an optional metadata value can be passed through to provide hints on how to serialize the object. By default this is the `__phpSerializedObject__` property, but can be customised by passing through an options object through to the serialize method. (See the `__tests__` folder for more examples.)
 
 ```
 var php = require('js-php-serialize');
