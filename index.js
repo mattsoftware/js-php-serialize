@@ -1,26 +1,4 @@
 
-//var item = {
-//    __phpSerializeObject__: { 
-//        name: 'BaseApp_Queue_Item',
-//        access: { 
-//            _module: "protected" ,
-//            _controller: "protected",
-//            _action: "protected",
-//            _params: "protected",
-//        },
-//    },
-//    _module: 'crm',
-//    _controller: 'lead',
-//    _action: 'save-email',
-//    _params: {
-//        filename: '',
-//    },
-//    BaseApp_Queue_Item_info: [],
-//};
-//
-////console.log(phpSerialize(o));
-////console.log('O:18:"BaseApp_Queue_Item":5:{s:10:"*_module";s:3:"crm";s:14:"*_controller";s:4:"lead";s:10:"*_action";s:10:"save-email";s:10:"*_params";a:1:{s:8:"filename";s:55:"s3://development.tmp.ivvy.com/tmp/ivvy_crm_email_rjh1Ly";}s:25:"BaseApp_Queue_Item_info";a:0:{}}');
-
 var serialize = (v, options) => {
     if (!options) {
         options = {
