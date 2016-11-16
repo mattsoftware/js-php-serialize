@@ -10,7 +10,7 @@ var serialize = (v, options) => {
         ret = 'N;';
     } else if (typeof v === 'boolean') {
         ret = 'b:' + (v ? '1' : '0') + ';';
-    } else if (typeof v === 'number' || (typeof v === 'string' && +v == v)) {
+    } else if (typeof v === 'number' || (typeof v === 'string' && "" + (+v) === v)) {
         if (v % 1 === 0) {
             ret = 'i:' + v + ';';
         } else {

@@ -10,6 +10,7 @@ it ('serializes primitives', () => {
     expect(php.serialize(3.14)).toEqual('d:3.1400000000000001;');
     expect(php.serialize("hello")).toEqual('s:5:"hello";');
     expect(php.serialize("0")).toEqual('i:0;');
+    expect(php.serialize("")).toEqual('s:0:"";');
 });
 
 it ('serializes arrays', () => {
