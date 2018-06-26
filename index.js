@@ -17,7 +17,7 @@ var serialize = (v, options) => {
             ret = 'd:' + v.toFixed(16) + ';';
         }
     } else if (typeof v === "string") {
-        ret = "s:" + v.length + ':"' + v + '";';
+        ret = "s:" + Buffer.byteLength(v, 'utf8') + ':"' + v + '";';
     } else if (v[options.metakey]) {
         var meta = v[options.metakey];
         var properties = Object.keys(v).filter(k => { return k !== options.metakey; }).map(k => {
