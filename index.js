@@ -13,7 +13,10 @@ var serialize = (v, options) => {
     } else if (typeof v === 'number' || (typeof v === 'string' && "" + (+v) === v)) {
         if (v % 1 === 0) {
             ret = 'i:' + v + ';';
-        } else {
+        } else if (isNaN(v)) {
+            ret = 'd:NAN;';
+        }
+        else {
             ret = 'd:' + v.toFixed(16) + ';';
         }
     } else if (typeof v === "string") {

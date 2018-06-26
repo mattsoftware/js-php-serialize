@@ -11,6 +11,7 @@ it ('serializes primitives', () => {
     expect(php.serialize("hello")).toEqual('s:5:"hello";');
     expect(php.serialize("Köln")).toEqual('s:5:"Köln";');
     expect(php.serialize("0")).toEqual('i:0;');
+    expect(php.serialize(NaN)).toEqual('d:NAN;');
     expect(php.serialize("")).toEqual('s:0:"";');
 });
 
