@@ -15,8 +15,7 @@ var serialize = (v, options) => {
             ret = 'i:' + v + ';';
         } else if (isNaN(v)) {
             ret = 'd:NAN;';
-        }
-        else {
+        } else {
             ret = 'd:' + v.toFixed(16) + ';';
         }
     } else if (typeof v === "string") {
